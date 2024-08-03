@@ -1,0 +1,38 @@
+.searchFilter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+}
+
+.searchFilter input,
+.searchFilter select {
+  width: 100%;
+  padding: 0.75rem 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #2c2c2c;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  color: #b6b4b4;
+}
+
+.searchFilter input::placeholder {
+  padding-left: 5px;
+  color: #b6b4b4;
+}
+
+@media (min-width: 768px) {
+  .searchFilter {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (hover: hover) {
+  .searchFilter input:hover,
+  .searchFilter select:hover {
+    background-color: #3a3a3a;
+  }
+}
